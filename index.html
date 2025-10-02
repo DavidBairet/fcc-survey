@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+        <title>formulaire-d'inscription</title>
+        <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+    <h1 id="title">Inscription - Forum tatoueur</h1>
+    <p id="description">Rejoignez la communauté : partagez vos créations, vos conseils et trouvez des collaborations.
+      </p>    
+   
+    <form id="survey-form">
+      <label id="name-label" for="name">Non Complet</label> 
+      <div class="form-groupe">
+    <input id="name" type="text"name="name" placeholder="Nom" required />
+</div>
+
+      
+ <div class="form-group">
+        <label id="email-label" for="email">Email </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="mail"
+          required
+        />
+      </div>
+       
+      <div class="form-group">
+        <label id="number-label" for="number">Âge</label>
+        <input
+          id="number"
+          type="number"
+          name="age"
+          placeholder="18–99"
+          min="18"
+          max="99"
+          required
+        />
+        </div>
+        
+      <div class="form-group">
+        <label for="username">Pseudo (optionnel)</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          placeholder="ex Tintin"
+        />
+      </div>
+       
+      <div class="form-group">
+        <label for="dropdown">Profil</label>
+        <select id="dropdown" name="profile">
+          <option value="tatoueur">Tatoueur / Tatoueuse</option>
+          <option value="apprenti">Apprenti(e)</option>
+          <option value="passionne">Passionné(e) / Client(e)</option>
+          <option value="studio">Gérant(e) de studio</option>
+        </select>
+      </div>
+       
+      <fieldset class="form-group">
+        <legend>Disponibilité pour des collaborations ?</legend>
+        <label class="inline">
+          <input type="radio" name="collab" value="oui" checked />
+          Oui
+        </label>
+        <label class="inline">
+          <input type="radio" name="collab" value="non" />
+          Non
+        </label>
+      </fieldset>
+     
+      <fieldset class="form-group">
+        <legend>Styles pratiqués / préférés</legend>
+        <label class="block">
+          <input type="checkbox" name="styles" value="blackwork" />
+          Blackwork
+        </label>
+        <label class="block">
+          <input type="checkbox" name="styles" value="realiste" />
+          Réalisme
+        </label>
+        <label class="block">
+          <input type="checkbox" name="styles" value="japonais" />
+          Japonais
+        </label>
+        <label class="block">
+          <input type="checkbox" name="styles" value="trad" />
+          Trad / Old School
+        </label>
+        <label class="block">
+          <input type="checkbox" name="styles" value="fineline" />
+          Fineline / Dotwork
+        </label>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="comments">Présentation / liens (portfolio, Instagram, etc.)</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="5"
+          placeholder="Parlez-nous de vous, de votre studio, vos dispos, vos liens…"
+        ></textarea>
+      </div>
+
+      
+      <div class="form-actions">
+        <button id="submit" type="submit">S’inscrire</button>
+      </div>
+    </form>
+  </main>
+  </body>
+  <footer></footer>
+  </html>

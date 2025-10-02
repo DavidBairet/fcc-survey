@@ -1,0 +1,89 @@
+:root {
+  --bg: #0f0f13;
+  --panel: #17171d;
+  --text: #f2f2f3;
+  --muted: #b7b7c0;
+  --accent: #9b7cff; 
+  --accent-2: #21d4fd;
+  --radius: 14px;
+  --gap: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+  background: radial-gradient(1200px 800px at 20% 10%, rgba(33,212,253,.2), transparent 60%),
+              radial-gradient(1200px 800px at 90% 80%, rgba(155,124,255,.18), transparent 60%), black;
+  color: white;
+  line-height: 1.45;
+}
+
+.container {
+  max-width: 780px;
+  margin: 40px auto;
+  padding: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: black;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.02);
+}
+
+#title {
+  margin: 0 0 6px;
+  font-size: clamp(26px, 4vw, 34px);
+  letter-spacing: .3px;
+}
+
+#description {
+  margin: 0 0 22px;
+  color: red;
+}
+
+
+
+.form-group,
+fieldset {
+  padding: 14px;
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: black;
+}
+
+label { display: block; font-weight: 600; margin-bottom: 8px; }
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: #0c0c10;
+  color: yellow;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder { color: #8f90a6; }
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: black;
+  box-shadow: 0 0 0 3px rgba(155,124,255,.25);
+}
+
+fieldset { border: 1px solid rgba(255,255,255,.06); }
+legend { padding: 0 6px; color: red; }
+
+.inline { display: inline-flex; align-items: center; gap: 8px; margin-right: 16px; }
+.block  { display: flex; align-items: center; gap: 8px; }
+
+.form-actions { display: flex; justify-content: flex-end; }
+
+
